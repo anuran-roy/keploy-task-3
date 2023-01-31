@@ -59,8 +59,8 @@ function execute() {
     // console.log(`Number of requests to send: ${limit - i}`);
 
     for (; i <= limit; i++) {
-      console.log("Executing execute()");
-      setTimeout(() => getJoke, 5000);
+      console.log("Executing getJoke()");
+      setTimeout(getJoke, 5000);
     }
 
   // document.getElementById("jokeAlert").innerText = "Jokes displayed!";
