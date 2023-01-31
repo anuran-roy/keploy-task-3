@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="./script.js"></script>
+  </head>
+
+  <body class="bg-white">
+    <h1 class="font-bold text-4xl text-center p-3 m-3">Jokes API</h1>
+    <p id="joke" class="shadow-lg p-5 m-3 border-2 items-center flex-row space-between object-center">
+      Enter number of jokes (default 10)
+      <input
+        type="number"
+        class="text-gray-600 px-3 py-5 my-3 mx-5 border-2 rounded-md border-gray-800"
+        placeholder="10"
+        id="jokesLimit"
+        defaultValue="10"
+      />
+      Enter category of jokes (Options: Miscellaneous, Programming, Dark, Pun, Spooky, Christmas)
+      <input
+        type="text"
+        class="text-gray-600 px-3 py-5 my-3 mx-5 border-2 rounded-md border-gray-800"
+        placeholder="programming"
+        defaultValue="Dark"
+        id="jokesCategory"
+      />
+      <button class="px-3 py-1 rounded-md mx-3 bg-green-700 text-white font-bold text-2xl" onclick="clearAndExecute();">Get Jokes!</button>
+    </p>
+    <p
+      id="jokeAlert"
+      class="p-5 m-3 border-2 text-center"
+    >
+    </p>
+    <main class="p-3">
+      <ul class="list-bullet" id="jokesList"></ul>
+    </main>
+  </body>
+</html>
